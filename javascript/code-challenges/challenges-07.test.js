@@ -63,11 +63,7 @@ For example, if the input is 'Welcome', the output will be:
 ------------------------------------------------------------------------------------------------ */
 
 const howMuchPencil = (str) => {
-  let result = [];
-  for (let i=0; i<=str.length; i++) {
-    result.push(str.slice(i));
-  }
-  return result;
+  return [...[...str].map((letter,i)=>[...str].splice(i).join('')),'']
 };
 
 /* ------------------------------------------------------------------------------------------------
