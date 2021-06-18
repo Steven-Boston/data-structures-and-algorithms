@@ -63,8 +63,6 @@ const updateNumbers = (obj) => {
   return Object.entries(obj).map(entry=>entry.join(': '));
 };
 
-
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 5
 
