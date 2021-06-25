@@ -63,7 +63,7 @@ Note: if you ever need to validate an email using a regex in practice, the Inter
 ------------------------------------------------------------------------------------------------ */
 
 const validateEmail = (email) => {
-  return /^[A-Za-z0-9]+(\.[A-Za-z0-9]+)?@[a-z]*(\.com|\.net|\.org)$/.test(email);
+  return /^[A-Za-z0-9]+(\.[A-Za-z0-9]+)?@[a-z]+\.(com|net|org)$/.test(email);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -101,9 +101,7 @@ findTagNames(['<div><h1>Hello, world!</h1></div>', '<p>Welcome to my site</p>'])
 ------------------------------------------------------------------------------------------------ */
 
 const findTagNames = elements => {
-  let elArray = [];
-    elements.forEach(str=>elArray=[...elArray,...str.match(/\/[a-z0-9]*/g)]);
-  return elArray;
+    return elements.reduce((elArray,str)=>elArray=[...elArray,...str.match(/\/[a-z0-9]*/g)],[]);
 };
 
 /* ------------------------------------------------------------------------------------------------
