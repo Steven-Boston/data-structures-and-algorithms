@@ -15,3 +15,4 @@ To run tests:
 
 Challenge 01: [Reverse-Array](./c-sharp/reverseArray/README.md)
 Challenge 02: [Array-Insert-Shift](./c-sharp/arrayInsertShift/README.md)
+Challenge 03: [Array-Binary-Search](./c-sharp/array-binary-search/README.md)
