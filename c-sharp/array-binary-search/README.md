@@ -4,7 +4,7 @@ In this challenge we were tasked with creating a method that takes a sorted arra
 
 ## Whiteboard Process
 
-![whiteboard](./binaryWhiteboard)
+![whiteboard](./binaryWhiteboard.PNG)
 
 ## Approach and Efficiency
 
