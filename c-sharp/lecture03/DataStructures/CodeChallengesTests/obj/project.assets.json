@@ -1674,24 +1674,11 @@
       "CodeChallenges/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
-        "dependencies": {
-          "DataStructures": "1.0.0"
-        },
         "compile": {
           "bin/placeholder/CodeChallenges.dll": {}
         },
         "runtime": {
           "bin/placeholder/CodeChallenges.dll": {}
-        }
-      },
-      "DataStructures/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v5.0",
-        "compile": {
-          "bin/placeholder/DataStructures.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DataStructures.dll": {}
         }
       }
     }
@@ -5934,11 +5921,6 @@
       "type": "project",
       "path": "../CodeChallenges/CodeChallenges.csproj",
       "msbuildProject": "../CodeChallenges/CodeChallenges.csproj"
-    },
-    "DataStructures/1.0.0": {
-      "type": "project",
-      "path": "../DataStructures/DataStructures.csproj",
-      "msbuildProject": "../DataStructures/DataStructures.csproj"
     }
   },
   "projectFileDependencyGroups": {
