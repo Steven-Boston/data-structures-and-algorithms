@@ -1671,14 +1671,14 @@
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
       },
-      "DataStructures/1.0.0": {
+      "Data-Structures/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "compile": {
-          "bin/placeholder/DataStructures.dll": {}
+          "bin/placeholder/Data-Structures.dll": {}
         },
         "runtime": {
-          "bin/placeholder/DataStructures.dll": {}
+          "bin/placeholder/Data-Structures.dll": {}
         }
       }
     }
@@ -5917,15 +5917,15 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "DataStructures/1.0.0": {
+    "Data-Structures/1.0.0": {
       "type": "project",
-      "path": "../DataStructures/DataStructures.csproj",
-      "msbuildProject": "../DataStructures/DataStructures.csproj"
+      "path": "../Data-Structures/Data-Structures/Data-Structures.csproj",
+      "msbuildProject": "../Data-Structures/Data-Structures/Data-Structures.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "DataStructures >= 1.0.0",
+      "Data-Structures >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.9.4",
       "coverlet.collector >= 3.0.2",
       "xunit >= 2.4.1",
@@ -5959,8 +5959,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\steve\\Documents\\projects\\codefellows\\401\\data-structures-and-algorithms\\c-sharp\\lecture03\\DataStructures\\DataStructures\\DataStructures.csproj": {
-              "projectPath": "C:\\Users\\steve\\Documents\\projects\\codefellows\\401\\data-structures-and-algorithms\\c-sharp\\lecture03\\DataStructures\\DataStructures\\DataStructures.csproj"
+            "C:\\Users\\steve\\Documents\\projects\\codefellows\\401\\data-structures-and-algorithms\\c-sharp\\lecture03\\DataStructures\\Data-Structures\\Data-Structures\\Data-Structures.csproj": {
+              "projectPath": "C:\\Users\\steve\\Documents\\projects\\codefellows\\401\\data-structures-and-algorithms\\c-sharp\\lecture03\\DataStructures\\Data-Structures\\Data-Structures\\Data-Structures.csproj"
             }
           }
         }
