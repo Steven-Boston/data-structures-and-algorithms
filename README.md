@@ -16,4 +16,5 @@ To run tests:
 - Challenge 01: [Reverse-Array](./c-sharp/reverseArray/README.md)
 - Challenge 02: [Array-Insert-Shift](./c-sharp/arrayInsertShift/README.md)
 - Challenge 03: [Array-Binary-Search](./c-sharp/array-binary-search/README.md)
-- Challenge 05: [Singly-Linked-List](./c-sharp/lecture03/README.md)
+- Challenge 05: [Singly-Linked-List](./c-sharp/data-structures/README.md)
+- Challenge 06-07: [Linked-List-Methods](./c-sharp/data-structures/DataStructures/Data-Structures/README.md)

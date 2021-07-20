@@ -19,6 +19,9 @@ namespace DataStructures
       testList.Includes(10);
       testList.Includes(7);
 
+      int kStuff = testList.KFromLast(4);
+      Console.WriteLine($"4th from last is {kStuff}");
+
       testList.ListToString();
     }
   }

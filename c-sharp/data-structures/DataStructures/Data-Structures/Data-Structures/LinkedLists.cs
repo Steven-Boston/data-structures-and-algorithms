@@ -115,5 +115,36 @@ namespace DataStructures
                 }
             }
         }
+        public int KFromLast(int k)
+        {
+            if (k<0)
+            {
+                throw new IndexOutOfRangeException("Value form last cannot be negative");
+            }
+            Node current = Head;
+            int count = 0;
+            while (current != null)
+            {
+              current = current.Next;
+              count++;
+            }
+            if (k >= count)
+            {
+                throw new IndexOutOfRangeException("Value from last must be less that list length");
+            }
+            current = Head;
+            for (int i=0; i<count-k; i++)
+            {
+                if (i+1 == count-k)
+                {
+                    return current.Value;  
+                }
+                else
+                {
+                    current = current.Next;
+                }
+            }
+            return 0;
+        }
     }
 }
