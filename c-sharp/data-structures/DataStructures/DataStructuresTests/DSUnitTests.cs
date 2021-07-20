@@ -66,6 +66,12 @@ namespace DataStructuresTests
       testList.Insert(6);
       testList.Insert(4);
       testList.Insert(2);
+
+      testList.InsertBefore(8, 7);
+      testList.InsertBefore(2, 1);
+
+      Assert.Equal(1, testList.Head.Value);
+      Assert.Equal(7, testList.Head.Next.Next.Next.Next.Value);
     }
     [Fact]
     public void CanInsertAfter()
