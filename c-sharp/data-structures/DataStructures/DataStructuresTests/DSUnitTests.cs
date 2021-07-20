@@ -66,6 +66,12 @@ namespace DataStructuresTests
       testList.Insert(6);
       testList.Insert(4);
       testList.Insert(2);
+
+      testList.InsertBefore(8, 7);
+      testList.InsertBefore(2, 1);
+
+      Assert.Equal(1, testList.Head.Value);
+      Assert.Equal(7, testList.Head.Next.Next.Next.Next.Value);
     }
     [Fact]
     public void CanInsertAfter()
@@ -81,6 +87,21 @@ namespace DataStructuresTests
       testList.InsertAfter(10, 11);
       Assert.Equal(7, testList.Head.Next.Next.Next.Value);
       Assert.Equal(11, testList.Head.Next.Next.Next.Next.Next.Next.Value);
+    }
+    [Fact]
+    public void CanReturnKFromLast()
+    {
+      LinkedList testList = new LinkedList();
+      testList.Insert(10);
+      Assert.Equal(10, testList.KFromLast(0));
+
+      testList.Insert(8);
+      testList.Insert(6);
+
+      Assert.Throws<IndexOutOfRangeException>(() => testList.KFromLast(10));
+      Assert.Throws<IndexOutOfRangeException>(() =>testList.KFromLast(3));
+      Assert.Throws<IndexOutOfRangeException>(() => testList.KFromLast(-2));
+      Assert.Equal(8, testList.KFromLast(1));
     }
   }
 }
