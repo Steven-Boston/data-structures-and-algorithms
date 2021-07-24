@@ -1,15 +1,16 @@
 using System;
+using System.Collections.Generic;
 
 namespace DataStructures
 {
-    public class LinkedList
+    public class LinkedList<T>
     {
-        public Node Head { get; set; }
+        public Node<T> Head { get; set; }
         public LinkedList()
         {  }
-        public void Insert(int value)
+        public void Insert(T value)
         {
-            Node node = new Node(value);
+            Node<T> node = new Node<T>(value);
             if (Head != null)
             {
                 node.Next = Head;
@@ -20,11 +21,11 @@ namespace DataStructures
 
         public bool Includes(int value)
         {
-            Node current = Head;
+            Node<T> current = Head;
 
             while (current != null)
             {
-                if(value == current.Value)
+                if(value.Equals(current.Value))
                 {
                     Console.WriteLine($"This list contains {value}");
                     return true;
@@ -38,7 +39,7 @@ namespace DataStructures
         public string ListToString()
         {
             string output = "";
-            Node current = Head;
+            Node<T> current = Head;
             while (current != null)
             {
                 output = output + $"{current.Value} -> ";
@@ -48,16 +49,16 @@ namespace DataStructures
             Console.WriteLine(output);
             return output;
         }
-        public void AppendLinked(int value)
+        public void AppendLinked(T value)
         {
-            Node newNode = new Node(value);
+            Node<T> newNode = new Node<T>(value);
             bool finished = false;
             if (Head == null)
             {
               Head = newNode;
               finished = true;
             }
-            Node current = Head;
+            Node<T> current = Head;
             while (finished == false)
             {
               if (current.Next == null)
@@ -68,20 +69,20 @@ namespace DataStructures
               current = current.Next;
             }
         }
-        public void InsertBefore(int before, int value)
+        public void InsertBefore(T before, T value)
         {
-            Node newNode = new Node(value);
+            Node<T> newNode = new Node<T>(value);
             bool finished = false;
-            Node current = Head;
-            Node previous = null;
-            if (current.Value == before)
+            Node<T> current = Head;
+            Node<T> previous = null;
+            if (!current.Value.Equals(before))
             {
               Insert(value);
               return;
             }
             while (finished == false)
             {
-              if (current.Value != before)
+              if (current.Value.Equals(before))
 
               {
                 previous = current;
@@ -95,15 +96,15 @@ namespace DataStructures
               }
           }
         }
-        public void InsertAfter(int after, int value)
+        public void InsertAfter(T after, T value)
         {
-          Node newNode = new Node(value);
+          Node<T> newNode = new Node<T>(value);
           bool finished = false;
-          Node current = Head;
+          Node<T> current = Head;
 
           while (finished == false)
             {
-                if (current.Value == after)
+                if (current.Value.Equals(after))
                 {
                   newNode.Next = current.Next;
                   current.Next = newNode;
@@ -115,13 +116,13 @@ namespace DataStructures
                 }
             }
         }
-        public int KFromLast(int k)
+        public T KFromLast(int k)
         {
             if (k<0)
             {
                 throw new IndexOutOfRangeException("Value form last cannot be negative");
             }
-            Node current = Head;
+            Node<T> current = Head;
             int count = 0;
             while (current != null)
             {
@@ -144,7 +145,7 @@ namespace DataStructures
                     current = current.Next;
                 }
             }
-            return 0;
+            throw new IndexOutOfRangeException("No Values available");
         }
     }
 }

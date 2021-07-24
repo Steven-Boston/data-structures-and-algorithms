@@ -4,18 +4,18 @@ using DataStructures;
 
 namespace DataStructuresTests
 {
-  public class DSUnitTests
+  public class LinkedListTests
   {
     [Fact]
     public void CanCreateList()
     {
-      LinkedList testList = new LinkedList();
+      LinkedList<int> testList = new LinkedList<int>();
       Assert.NotNull(testList);
     }
     [Fact]
     public void CanInsertAndLink()
     {
-      LinkedList testList = new LinkedList();
+      LinkedList<int> testList = new LinkedList<int>();
       testList.Insert(6);
       testList.Insert(3);
       Assert.Equal(3, testList.Head.Value);
@@ -24,7 +24,7 @@ namespace DataStructuresTests
     [Fact]
     public void CanInsertMultipleAndfind()
     {
-      LinkedList testList = new LinkedList();
+      LinkedList<int> testList = new LinkedList<int>();
       testList.Insert(6);
       testList.Insert(3);
       testList.Insert(4);
@@ -37,7 +37,7 @@ namespace DataStructuresTests
     [Fact]
     public void CanReturnSummary()
     {
-      LinkedList testList = new LinkedList();
+      LinkedList<int> testList = new LinkedList<int>();
       testList.Insert(6);
       testList.Insert(3);
       testList.Insert(4);
@@ -46,7 +46,7 @@ namespace DataStructuresTests
     [Fact]
     public void CanAppend()
     {
-      LinkedList testList = new LinkedList();
+      LinkedList<int> testList = new LinkedList<int>();
       testList.Insert(6);
       testList.Insert(4);
       testList.Insert(2);
@@ -60,7 +60,7 @@ namespace DataStructuresTests
     [Fact]
     public void CanInsertBefore()
     {
-      LinkedList testList = new LinkedList();
+      LinkedList<int> testList = new LinkedList<int>();
       testList.Insert(10);
       testList.Insert(8);
       testList.Insert(6);
@@ -71,12 +71,12 @@ namespace DataStructuresTests
       testList.InsertBefore(2, 1);
 
       Assert.Equal(1, testList.Head.Value);
-      Assert.Equal(7, testList.Head.Next.Next.Next.Next.Value);
+      Assert.Equal(6, testList.Head.Next.Next.Next.Next.Value);
     }
     [Fact]
     public void CanInsertAfter()
     {
-      LinkedList testList = new LinkedList();
+      LinkedList<int> testList = new LinkedList<int>();
       testList.Insert(10);
       testList.Insert(8);
       testList.Insert(6);
@@ -91,7 +91,7 @@ namespace DataStructuresTests
     [Fact]
     public void CanReturnKFromLast()
     {
-      LinkedList testList = new LinkedList();
+      LinkedList<int> testList = new LinkedList<int>();
       testList.Insert(10);
       Assert.Equal(10, testList.KFromLast(0));
 

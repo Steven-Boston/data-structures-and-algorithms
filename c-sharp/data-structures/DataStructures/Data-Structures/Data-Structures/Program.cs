@@ -6,7 +6,7 @@ namespace DataStructures
   {
     static void Main(string[] args)
     {
-      LinkedList testList = new LinkedList();
+      /*LinkedList<int> testList = new LinkedList<int>();
       testList.Insert(9);
       testList.Insert(8);
       testList.Insert(7);
@@ -22,7 +22,20 @@ namespace DataStructures
       int kStuff = testList.KFromLast(4);
       Console.WriteLine($"4th from last is {kStuff}");
 
-      testList.ListToString();
+      testList.ListToString();*/
+      Queue<int> testQueue = new();
+      testQueue.EnQueue(1);
+      testQueue.EnQueue(2);
+      testQueue.EnQueue(3);
+      testQueue.EnQueue(4);
+      testQueue.EnQueue(5);
+
+      Node<int> current = testQueue.Front;
+      while (current != null)
+      {
+        Console.WriteLine($"Next value: {current.Value}");
+        current = current.Next;
+      }
     }
   }
 }
