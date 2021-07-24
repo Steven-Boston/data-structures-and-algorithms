@@ -1,0 +1,203 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\steve\\Documents\\projects\\codefellows\\401\\data-structures-and-algorithms\\c-sharp\\DataStructures\\CodeChallengesTests\\CodeChallengesTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\steve\\Documents\\projects\\codefellows\\401\\data-structures-and-algorithms\\c-sharp\\DataStructures\\CodeChallengesTests\\CodeChallengesTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\steve\\Documents\\projects\\codefellows\\401\\data-structures-and-algorithms\\c-sharp\\DataStructures\\CodeChallengesTests\\CodeChallengesTests.csproj",
+        "projectName": "CodeChallengesTests",
+        "projectPath": "C:\\Users\\steve\\Documents\\projects\\codefellows\\401\\data-structures-and-algorithms\\c-sharp\\DataStructures\\CodeChallengesTests\\CodeChallengesTests.csproj",
+        "packagesPath": "C:\\Users\\steve\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\steve\\Documents\\projects\\codefellows\\401\\data-structures-and-algorithms\\c-sharp\\DataStructures\\CodeChallengesTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\steve\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\steve\\Documents\\projects\\codefellows\\401\\data-structures-and-algorithms\\c-sharp\\DataStructures\\CodeChallenges\\CodeChallenges.csproj": {
+                "projectPath": "C:\\Users\\steve\\Documents\\projects\\codefellows\\401\\data-structures-and-algorithms\\c-sharp\\DataStructures\\CodeChallenges\\CodeChallenges.csproj"
+              },
+              "C:\\Users\\steve\\Documents\\projects\\codefellows\\401\\data-structures-and-algorithms\\c-sharp\\DataStructures\\Data-Structures\\Data-Structures\\Data-Structures.csproj": {
+                "projectPath": "C:\\Users\\steve\\Documents\\projects\\codefellows\\401\\data-structures-and-algorithms\\c-sharp\\DataStructures\\Data-Structures\\Data-Structures\\Data-Structures.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.4, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\steve\\Documents\\projects\\codefellows\\401\\data-structures-and-algorithms\\c-sharp\\DataStructures\\CodeChallenges\\CodeChallenges.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\steve\\Documents\\projects\\codefellows\\401\\data-structures-and-algorithms\\c-sharp\\DataStructures\\CodeChallenges\\CodeChallenges.csproj",
+        "projectName": "CodeChallenges",
+        "projectPath": "C:\\Users\\steve\\Documents\\projects\\codefellows\\401\\data-structures-and-algorithms\\c-sharp\\DataStructures\\CodeChallenges\\CodeChallenges.csproj",
+        "packagesPath": "C:\\Users\\steve\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\steve\\Documents\\projects\\codefellows\\401\\data-structures-and-algorithms\\c-sharp\\DataStructures\\CodeChallenges\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\steve\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\steve\\Documents\\projects\\codefellows\\401\\data-structures-and-algorithms\\c-sharp\\DataStructures\\Data-Structures\\Data-Structures\\Data-Structures.csproj": {
+                "projectPath": "C:\\Users\\steve\\Documents\\projects\\codefellows\\401\\data-structures-and-algorithms\\c-sharp\\DataStructures\\Data-Structures\\Data-Structures\\Data-Structures.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\steve\\Documents\\projects\\codefellows\\401\\data-structures-and-algorithms\\c-sharp\\DataStructures\\Data-Structures\\Data-Structures\\Data-Structures.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\steve\\Documents\\projects\\codefellows\\401\\data-structures-and-algorithms\\c-sharp\\DataStructures\\Data-Structures\\Data-Structures\\Data-Structures.csproj",
+        "projectName": "Data-Structures",
+        "projectPath": "C:\\Users\\steve\\Documents\\projects\\codefellows\\401\\data-structures-and-algorithms\\c-sharp\\DataStructures\\Data-Structures\\Data-Structures\\Data-Structures.csproj",
+        "packagesPath": "C:\\Users\\steve\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\steve\\Documents\\projects\\codefellows\\401\\data-structures-and-algorithms\\c-sharp\\DataStructures\\Data-Structures\\Data-Structures\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\steve\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
