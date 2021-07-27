@@ -6,3 +6,4 @@ This README will serve as a directory for the mainline code challenges from 401-
 - [Challenge 06/07](./DataStructuresDocs/README0607.md): Adding methods for LinkedLists
 - [Challenge 08](./CodeChallengesDocs/README08.md): ZipLists
 - [Challenge 10](./DataStructuresDocs/README10.md): Stack and Queue
+- [Challenge 11](./CodeChallengesDocs/README11.md): Pseudo-Queue via Stacks
