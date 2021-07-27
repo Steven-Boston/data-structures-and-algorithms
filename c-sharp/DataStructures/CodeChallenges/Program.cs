@@ -8,21 +8,9 @@ namespace CodeChallenges
     {
         public static void Main(string[] args)
         {
-            DataStructures.LinkedList<int> test1 = new();
-            test1.Insert(1);
-            test1.AppendLinked(3);
-            test1.AppendLinked(5);
-            test1.AppendLinked(7);
-            test1.ListToString();
+            DuctTapeQueue<int> testTape = new();
+            testTape.EnQueue(4);
 
-            DataStructures.LinkedList<int> test2 = new();
-            test2.Insert(2);
-            test2.AppendLinked(4);
-            test2.AppendLinked(6);
-            test2.ListToString();
-
-            DataStructures.LinkedList<int> list3 = ZipLists(test1, test2);
-            list3.ListToString();
         }
         public static DataStructures.LinkedList<int> ZipLists(DataStructures.LinkedList<int> listOne, DataStructures.LinkedList<int> listTwo)
         {
