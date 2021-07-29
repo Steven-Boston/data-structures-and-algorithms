@@ -9,6 +9,7 @@ namespace DataStructures
   public class Stack<T>
   {
     public Node<T> Top { get; set; }
+
     public void Push(T value)
     {
       Node<T> node = new Node<T>(value);
