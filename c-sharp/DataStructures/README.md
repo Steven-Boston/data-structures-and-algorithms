@@ -9,3 +9,4 @@ This README will serve as a directory for the mainline code challenges from 401-
 - [Challenge 11](./CodeChallengesDocs/README11.md): Pseudo-Queue via Stacks
 - [Challenge 12](./CodeChallengesDocs/README12.md): Animal Shelter
 - [Challenge 13](./CodeChallengesDocs/README13.md): ValidateBrackets
+- [Challenge 15](./DataStructuresDocs/README10.md): Binary Tree and BST
