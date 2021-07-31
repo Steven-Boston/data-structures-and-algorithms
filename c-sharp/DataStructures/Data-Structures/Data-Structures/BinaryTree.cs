@@ -10,18 +10,42 @@ namespace DataStructures
   {
     public Node<T> Root { get; set; }
 
-    public void Preorder(Node<T> Root)
+    public static List<T> Preorder(Node<T> node, List<T> values)
     {
-      Console.WriteLine($"Value: {Root.Value}");
-      if (Root.Left != null)
+      values.Add(node.Value);
+
+      if (node.Left != null)
       {
-        Preorder(Root.Left);
+        Preorder(node.Left, values);
       }
-      if (Root.Right != null)
+      if (node.Right != null)
       {
-        Preorder(Root.Right);
+        Preorder(node.Right, values);
       }
+      return values;
     }
-    public void 
+    public static List<T> InOrder(Node<T> node, List<T> values)
+    {
+      if(node.Left != null) { InOrder(node.Left, values); }
+
+      values.Add(node.Value);
+
+      if(node.Right != null) { InOrder(node.Right, values); }
+
+      return values;
+    }
+    public static List<T> PostOrder(Node<T> node, List<T> values)
+    {
+      if (node.Left != null)
+      {
+        Preorder(node.Left, values);
+      }
+      if (node.Right != null)
+      {
+        Preorder(node.Right, values);
+      }
+      values.Add(node.Value);
+      return values;
+    }
   }
 }

@@ -13,7 +13,16 @@ This data structure consists of a Binary Tree and an extension of it that forms 
 
 ## Approach & Efficiency
 
+Each Traversal method relies on recursion, which necessarily gives each limited efficiency:
 
+- PreOrder: O(h)
+- InOrder: O(n)
+- PostOrder: O(w)
+
+This lets the BST methods stay somewhat light, however:
+
+- Add: O(h)
+- Contains O(log n)
 
 ## API
 
@@ -22,9 +31,9 @@ This implementation add two data structures:
 DataStructures.BinaryTree<T>
 
 - Node<T> Root
-- PreOrder(Root)
-- InOrder(Root) => 
-- PostOrder(Root) => Array
+- PreOrder(node<T>, list<T>) => List<T>
+- InOrder(node<T>, List<T>) => List<T>
+- PostOrder(node<T>, List<T>) => List<T>
 
 DataStructures.BinarySearchTree<T> (extends BinaryTree)
 

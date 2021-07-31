@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructures
 {
-  class BinarySearchTree<T> : BinaryTree<T> where T : IComparable
+  public class BinarySearchTree<T> : BinaryTree<T> where T : IComparable
   {
     public void Add(Node<T> node, T value)
     {
@@ -21,16 +21,45 @@ namespace DataStructures
         if(node.Left == null) { node.Left = newNode; }
         else { Add(node.Left, value); }
       }
-      else if( newNode.Value.CompareTo(node.Value) < 0 )
+      else if( newNode.Value.CompareTo(node.Value) > 0 )
       {
         if (node.Right == null) { node.Right = newNode; }
-        else { Add(node.Right, value);0 }
+        else { Add(node.Right, value); }
       }
     }
     public bool Contains(T Value)
     {
-
-      return false;
+      Node<T> current = Root;
+      while(true)
+      {
+        if (current.Value.Equals(Value))
+        {
+          return true;
+        }
+        else if(current.Value.CompareTo(Value) > 0 )
+        {
+          if (current.Left != null)
+          {
+            current = current.Left;
+          }
+          else
+          {
+            return false;
+          }
+        }
+        else
+        {
+          if (current.Right != null)
+          {
+            current = current.Right;
+          }
+          else
+          {
+            return false;
+          }
+        }   
+      }
     }
+
   }
 }
