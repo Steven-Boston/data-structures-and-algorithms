@@ -48,5 +48,28 @@ namespace DataStructuresTests
       Assert.Equal(3, postOrder[0]);
       Assert.Equal(3, preOrder[1]);
     }
+    [Fact]
+    public void CanFindLargest()
+    {
+      BinaryTree<int> pine = new();
+      pine.Root = new(3);
+      pine.Root.Left = new(5);
+      pine.Root.Right = new(6);
+      pine.Root.Right.Left = new(8);
+      pine.Root.Right.Right = new(2);
+      pine.Root.Right.Right.Right = new(1);
+
+      Assert.Equal(8, pine.TreeMax());
+
+      pine.Root.Left.Right = new(6);
+
+      Assert.Equal(8, pine.TreeMax());
+    }
+    [Fact]
+    public void CanThrowEmptyMax()
+    {
+      BinaryTree<int> pine = new();
+      Assert.Throws<Exception>(() => pine.TreeMax());
+    }
   }
 }

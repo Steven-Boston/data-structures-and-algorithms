@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructures
 {
-  public class BinaryTree<T>
+  public class BinaryTree<T> where T : IComparable
   {
     public Node<T> Root { get; set; }
 
@@ -46,6 +46,33 @@ namespace DataStructures
       }
       values.Add(node.Value);
       return values;
+    }
+    public T TreeMax()
+    {
+      Queue<Node<T>> nodeHopper = new();
+      if (Root == null)
+      {
+        throw new Exception("Sorry, this tree is empty.");
+      }
+      nodeHopper.EnQueue(Root);
+      T largest = Root.Value;
+      while (!nodeHopper.IsEmpty())
+      {
+        Node<T> treeNode = nodeHopper.DeQueue();
+        if (treeNode.Value.CompareTo(largest) > 0)
+        {
+          largest = treeNode.Value;
+        }
+        if (treeNode.Left != null)
+        {
+          nodeHopper.EnQueue(treeNode.Left);
+        }
+        if (treeNode.Right != null)
+        {
+          nodeHopper.EnQueue(treeNode.Right);
+        }
+      }
+      return largest;
     }
   }
 }
