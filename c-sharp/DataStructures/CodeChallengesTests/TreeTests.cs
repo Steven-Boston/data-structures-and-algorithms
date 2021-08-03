@@ -29,7 +29,7 @@ namespace CodeChallengesTests
       result.Add(2);
       result.Add(1);
 
-      List<int> comparator = BreadthFirst(pine);
+      List<int> comparator = BreadthFirstClass.BreadthFirst(pine);
 
       Assert.Equal(result, comparator);
     }
@@ -37,7 +37,7 @@ namespace CodeChallengesTests
     public void CanReturnEmpty()
     {
       BinaryTree<int> testTree = new();
-      List<int> testResult = BreadthFirst(testTree);
+      List<int> testResult = BreadthFirstClass.BreadthFirst(testTree);
       Assert.Empty(testResult);
     }
   }
