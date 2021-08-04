@@ -9,9 +9,11 @@ namespace DataStructures
         public Node<T> Next { get; set; }
         public Node<T> Left { get; set; }
         public Node<T> Right { get; set; }
+        public List<Node<T>> Leaves { get; set; }
         public Node(T value)
         {
             Value = value;
+            Leaves = new();
         }
     }
 }
