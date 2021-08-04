@@ -13,6 +13,7 @@ namespace DataStructures
         public Node(T value)
         {
             Value = value;
+            Leaves = new();
         }
     }
 }
