@@ -43,5 +43,74 @@ namespace CodeChallenges
       };
       Console.WriteLine("");
     }
+    public static void MergeSort(int[] array)
+    {
+      if(array.Length>1)
+      {
+        double n = array.Length / 2;
+        int mid = (int)Math.Ceiling(n);
+        int[] left = new int[mid];
+        int j = 0;
+        int[] right = new int[array.Length - mid];
+        int k = 0;
+
+        for(int i = 0; i<array.Length; i++)
+        {
+          if(i<mid)
+          {
+            left[j] = array[i];
+            j++;
+          }
+          else
+          {
+            right[k] = array[i];
+            k++;
+          }
+        }
+        MergeSort(left);
+        MergeSort(right);
+        Merge(left, right, array);
+      }
+    }
+
+    public static void Merge(int[] left, int[] right, int[] array)
+    {
+      int i = 0;
+      int j = 0;
+      int k = 0;
+
+      while((i<left.Length)&&(j<right.Length))
+      {
+        if(left[i]<right[j])
+        {
+          array[k] = left[i];
+          i++;
+        }
+        else
+        {
+          array[k] = right[j];
+          j++;
+        }
+        k++;
+      }
+      if(i==left.Length)
+      {
+        while(j<right.Length)
+        {
+          array[k] = right[j];
+          k++;
+          j++;
+        }
+      }
+      else
+      {
+        while (i < left.Length)
+        {
+          array[k] = left[i];
+          k++;
+          i++;
+        }
+      }
+    }
   }
 }
