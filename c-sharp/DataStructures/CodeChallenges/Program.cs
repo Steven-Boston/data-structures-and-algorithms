@@ -1,6 +1,7 @@
 using System;
 using DataStructures;
 using System.Collections.Generic;
+using CodeChallenges;
 
 namespace CodeChallenges
 {
@@ -8,9 +9,13 @@ namespace CodeChallenges
     {
         public static void Main(string[] args)
         {
-            DuctTapeQueue<int> testTape = new();
-            testTape.EnQueue(4);
+          int[] testArr = new int[] { 25, 7, 8, 4, 10, 78, 66};
+          ArraySorts.MergeSort(testArr);
 
+          foreach(int num in testArr)
+          {
+            Console.WriteLine(num);
+          }
         }
         public static DataStructures.LinkedList<int> ZipLists(DataStructures.LinkedList<int> listOne, DataStructures.LinkedList<int> listTwo)
         {
