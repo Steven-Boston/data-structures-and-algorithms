@@ -7,9 +7,10 @@ Challenge 27 requires us to, given an example, implement a method MergeSort that
 
 ## Solution
 
-This solution adds one method to CodeChallenges in the file ArraySorts.cs:
+This solution adds two methods to CodeChallenges in the file ArraySorts.cs:
 
 - MergeSort(int[]) -> Sorts an array of integers in place via recursion.
+- Merge(int[], int[], int[]) -> support method for MergeSort, sorts two sorted arrays into one. 
 
 ## Article: MergeSort
 
