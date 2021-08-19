@@ -112,5 +112,65 @@ namespace CodeChallenges
         }
       }
     }
+
+    public static void QuickSort(int[] arr, int left, int right)
+    {
+      Console.WriteLine("QuickSort Call:");
+        Console.WriteLine($"  Left: {left}");
+        Console.WriteLine($"  Right: {right}");
+        Console.Write("  Array Status:");
+        foreach (int num in arr)
+        {
+          Console.Write($" {num},");
+        }
+        Console.WriteLine("\n");
+      if (left<right)
+      {
+        int position = Partition(arr, left, right);
+        Console.WriteLine($"Position: {position}");
+        QuickSort(arr, left, position - 1);
+          QuickSort(arr, position + 1, right);
+        }
+    }
+
+    public static int Partition(int[] arr, int left, int right)
+    {
+      Console.WriteLine($"Partition, Left = {left}, Right = {right}");
+      int pivot = arr[right];
+      int low = left - 1;
+
+      for(int i=left; i<right; i++)
+      {
+        Console.WriteLine($"  i: {i}");
+        Console.WriteLine($"  pivot: {pivot}");
+        Console.Write("  Array Status:");
+        foreach (int num in arr)
+        {
+          Console.Write($" {num},");
+        }
+        Console.WriteLine();
+        if (arr[i] <= pivot)
+        {
+          low++;
+          Swap(arr, i, low);
+        }
+        Console.Write("  After Check/Swap:");
+        foreach (int num in arr)
+        {
+          Console.Write($" {num},");
+        }
+        Console.WriteLine("\n");
+      }
+      Swap(arr, right, low + 1);
+
+      return low + 1;
+    }
+
+    public static void Swap(int[] arr, int i, int low)
+    {
+      int temp = arr[i];
+      arr[i] = arr[low];
+      arr[low] = temp;
+    }
   }
 }

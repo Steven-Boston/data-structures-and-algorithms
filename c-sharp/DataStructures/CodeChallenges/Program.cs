@@ -9,12 +9,13 @@ namespace CodeChallenges
     {
         public static void Main(string[] args)
         {
-          int[] testArr = new int[] { 25, 7, 8, 4, 10, 78, 66};
-          ArraySorts.MergeSort(testArr);
+          int[] testArr = new int[] { 8, 4, 23, 42, 16, 15};
+          ArraySorts.QuickSort(testArr, 0, 5);
 
+          Console.WriteLine("Array after sort:");
           foreach(int num in testArr)
           {
-            Console.WriteLine(num);
+            Console.Write($" {num},");
           }
         }
         public static DataStructures.LinkedList<int> ZipLists(DataStructures.LinkedList<int> listOne, DataStructures.LinkedList<int> listTwo)
