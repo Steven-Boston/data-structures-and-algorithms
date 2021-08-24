@@ -16,12 +16,12 @@ namespace CodeChallenges
         Console.Write($"{num}, ");
       };
       Console.WriteLine("");
-      for (int i = 1; i<array.Length; i++)
+      for (int i = 1; i < array.Length; i++)
       {
         int j = i - 1;
         int temp = array[i];
 
-        while(( j >= 0 ) && ( temp < array[j] ))
+        while ((j >= 0) && (temp < array[j]))
         {
           array[j + 1] = array[j];
           j = j - 1;
@@ -45,7 +45,7 @@ namespace CodeChallenges
     }
     public static void MergeSort(int[] array)
     {
-      if(array.Length>1)
+      if (array.Length > 1)
       {
         double n = array.Length / 2;
         int mid = (int)Math.Ceiling(n);
@@ -54,9 +54,9 @@ namespace CodeChallenges
         int[] right = new int[array.Length - mid];
         int k = 0;
 
-        for(int i = 0; i<array.Length; i++)
+        for (int i = 0; i < array.Length; i++)
         {
-          if(i<mid)
+          if (i < mid)
           {
             left[j] = array[i];
             j++;
@@ -79,9 +79,9 @@ namespace CodeChallenges
       int j = 0;
       int k = 0;
 
-      while((i<left.Length)&&(j<right.Length))
+      while ((i < left.Length) && (j < right.Length))
       {
-        if(left[i]<right[j])
+        if (left[i] < right[j])
         {
           array[k] = left[i];
           i++;
@@ -93,9 +93,9 @@ namespace CodeChallenges
         }
         k++;
       }
-      if(i==left.Length)
+      if (i == left.Length)
       {
-        while(j<right.Length)
+        while (j < right.Length)
         {
           array[k] = right[j];
           k++;
@@ -115,54 +115,28 @@ namespace CodeChallenges
 
     public static void QuickSort(int[] arr, int left, int right)
     {
-      Console.WriteLine("QuickSort Call:");
-        Console.WriteLine($"  Left: {left}");
-        Console.WriteLine($"  Right: {right}");
-        Console.Write("  Array Status:");
-        foreach (int num in arr)
-        {
-          Console.Write($" {num},");
-        }
-        Console.WriteLine("\n");
-      if (left<right)
+      if (left < right)
       {
         int position = Partition(arr, left, right);
-        Console.WriteLine($"Position: {position}");
         QuickSort(arr, left, position - 1);
-          QuickSort(arr, position + 1, right);
-        }
+        QuickSort(arr, position + 1, right);
+      }
     }
 
     public static int Partition(int[] arr, int left, int right)
     {
-      Console.WriteLine($"Partition, Left = {left}, Right = {right}");
       int pivot = arr[right];
       int low = left - 1;
 
-      for(int i=left; i<right; i++)
+      for (int i = left; i < right; i++)
       {
-        Console.WriteLine($"  i: {i}");
-        Console.WriteLine($"  pivot: {pivot}");
-        Console.Write("  Array Status:");
-        foreach (int num in arr)
-        {
-          Console.Write($" {num},");
-        }
-        Console.WriteLine();
         if (arr[i] <= pivot)
         {
           low++;
           Swap(arr, i, low);
         }
-        Console.Write("  After Check/Swap:");
-        foreach (int num in arr)
-        {
-          Console.Write($" {num},");
-        }
-        Console.WriteLine("\n");
+        Swap(arr, right, low + 1);
       }
-      Swap(arr, right, low + 1);
-
       return low + 1;
     }
 
