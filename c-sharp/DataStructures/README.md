@@ -15,5 +15,6 @@ This README will serve as a directory for the mainline code challenges from 401-
 - [Challenge 27](./CodeChallengesDocs/README27.md): Sort array via Recursive Merging
 - [Challenge 28](./CodeChallengesDocs/README28.md): Sort array via Recursive Partitions
 - [Challenge 29](./DataStructuresDocs/README29.md): Hash Table Implementation
+- [Challenge 31](./CodeChallengesDocs/README31.md): RepeatedWords
 - [Challenge 33](./CodeChallengesDocs/README33.md): LeftJoin for HashTables
-
+- [Challenge 35](./DataStructuresDocs/README35.md): Graph Implementation
