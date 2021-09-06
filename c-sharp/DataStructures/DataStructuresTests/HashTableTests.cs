@@ -21,7 +21,7 @@ namespace DataStructuresTests
       testTable.Add("red", "frog");
       testTable.Add("redfin", "frogzilla");
       testTable.Add("redfinch", "walrus");
-      Assert.Equal("redfin: frogzilla", testTable.Get("redfin"));
+      Assert.Equal("frogzilla", testTable.Get("redfin"));
     }
     [Fact]
     public void CanHandleNull()
