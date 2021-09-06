@@ -7,7 +7,7 @@ This challenge requests a method that will take a string and return the first re
 
 ## Whiteboard Process
 
-![C31WhiteBoard](C18WhiteBoard.png)
+![C31WhiteBoard](C31WhiteBoard.png)
 
 ## Approach & Efficiency
 

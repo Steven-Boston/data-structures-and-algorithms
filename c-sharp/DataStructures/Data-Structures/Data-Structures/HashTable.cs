@@ -70,7 +70,7 @@ namespace DataStructures
         {
           if (current.Value.Key == key)
           {
-            string got = $"{current.Value.Key}: {current.Value.Value}";
+            string got = current.Value.Value;
             return got;
           }
           current = current.Next;
