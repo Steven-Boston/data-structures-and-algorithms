@@ -9,9 +9,10 @@ namespace CodeChallenges
     {
       public static void Main(string[] args)
       {
-      int[] nums1 = new int[] { 2,2,2,2};
-      int[] nums2 = new int[] { 2,2,2 };
-      Console.WriteLine(MedianOfTwoArrays.FindMedianSortedArrays(nums1, nums2));
+        Node<int> head = new(2);
+        head.Next = new(1);
+        head.Next.Next = new(4);
+        head.Next.Next.Next = new(3);
       }
       public static DataStructures.LinkedList<int> ZipLists(DataStructures.LinkedList<int> listOne, DataStructures.LinkedList<int> listTwo)
       {
