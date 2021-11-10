@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace CodeChallenges
 {
-  class MyAtoi
+  class MyAtoiMaker
   {
     //From https://leetcode.com/problems/string-to-integer-atoi/, not  working solution
-    public int MyAtoi(string s)
+    /*public int MyAtoi(string s)
     {
       string[] chars = s.Split("");
       int i = 0;
@@ -39,6 +39,6 @@ namespace CodeChallenges
         result = result * -1;
       }
       return result;
-    }
+    }*/
   }
 }
