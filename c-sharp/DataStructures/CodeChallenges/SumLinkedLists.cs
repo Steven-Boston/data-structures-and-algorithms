@@ -20,7 +20,7 @@ namespace CodeChallenges
         int sum = current1.Value + current2.Value + add;
         current1 = current1.Next;
         current2 = current2.Next;
-        if(sum-10<1)
+        if(sum-10>=0)
         {
           add = 1;
           result.AppendLinked(sum - 10);
@@ -42,6 +42,10 @@ namespace CodeChallenges
         result.AppendLinked(current2.Value + add);
         add = 0;
         current2 = current2.Next;
+      }
+      if(add == 1)
+      {
+        result.AppendLinked(1);
       }
       return result;
     }
